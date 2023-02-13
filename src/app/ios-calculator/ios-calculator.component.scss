@@ -1,0 +1,85 @@
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.phone-container {
+    background-color: black;
+    height: 780px;
+    width: 360px;
+    padding: 25px;
+    border-radius: 75px;
+    border-color: darkgrey;
+    border-style: solid;
+    border-width: 8px;
+}
+
+.output-container {
+    color: white;
+    display: flex;
+    width: auto;
+    overflow: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.equation-container {
+    height: 199.8px;
+}
+
+.result-container {
+    height: 133.2px;
+}
+
+.input-container {
+    color: #444;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 12px;
+    height: 423px;
+    width: auto;
+    padding: 12px;
+}
+
+button {
+    border-radius: 37.5px;
+    border-color: black;
+    padding: 0px;
+    font-size: 32px;
+    transition: background 500ms ease-out;
+}
+
+button:active {
+    transition: unset;
+    background: #c9c9c9;
+}
+
+.command {
+    background-color: #a0a0a0;
+    color: black;
+}
+
+.number {
+    background-color: #313131;
+    color: white;
+}
+
+.operator {
+    background-color: #f69906;
+    color: white;
+}
+
+.equals {
+    background-color: #969F0D;
+    color: white;
+}
+
+.output {
+    color: white;
+    font-size: 50px;
+    width: 100%;
+    align-self: flex-end;
+    text-align: right;
+    margin-bottom: 12px;
+    word-break: break-all;
+}

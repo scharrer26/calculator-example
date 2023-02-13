@@ -1,0 +1,32 @@
+<h1>iOS Calculator</h1>
+
+<div class="phone-container">
+    <div class="output-container equation-container">
+        <p class="output"> {{ calculationsService.equation }}</p>
+    </div>
+    <div class="output-container result-container">
+        <p class="output"> {{ calculationsService.result }}</p>
+    </div>
+    <div class="input-container">
+        <button class="command" (click)="changeSignOfNumber()">+/−</button>
+        <button class="command" (click)="addPercentToEquation('*0.01')">%</button>
+        <button class="command" (click)="removeLastCharacter()">DEL</button>
+        <button class="command" (click)="resetEqation()">AC</button>
+        <button class="number" (click)="updateEquation('7')">7</button>
+        <button class="number" (click)="updateEquation('8')">8</button>
+        <button class="number" (click)="updateEquation('9')">9</button>
+        <button class="operator" (click)="updateEquation('+')">+</button>
+        <button class="number" (click)="updateEquation('4')">4</button>
+        <button class="number" (click)="updateEquation('5')">5</button>
+        <button class="number" (click)="updateEquation('6')">6</button>
+        <button class="operator" (click)="updateEquation('-')">-</button>
+        <button class="number" (click)="updateEquation('1')">1</button>
+        <button class="number" (click)="updateEquation('2')">2</button>
+        <button class="number" (click)="updateEquation('3')">3</button>
+        <button class="operator" (click)="updateEquation('*')">*</button>
+        <button class="number" (click)="addDotToEquation()">.</button>
+        <button class="number" (click)="updateEquation('0')">0</button>
+        <button class="equals" (click)="calculateEqation()">=</button>
+        <button class="operator" (click)="updateEquation('/')">÷</button>
+    </div>
+</div>
